@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolhapuri Khajina - Kolhapur's Treasure</title>
+
+    <style>
+        /* --- Basic Setup --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfaf6; /* A warm, off-white background */
+            color: #4a2c2a; /* A dark, earthy brown for text */
+            line-height: 1.6;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #8B4513; /* A rich "Kolhapuri" leather brown */
+            color: #FFFFFF;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background-color: #5a3d2b; /* A darker brown for the nav */
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #8B4513;
+            border-radius: 5px;
+        }
+
+        /* --- Main Content --- */
+        main {
+            max-width: 1100px;
+            margin: 30px auto; /* Center the content */
+            padding: 0 20px;
+        }
+
+        /* Generic section styling */
+        section {
+            background: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #8B4513;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0e6d9;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 0; /* Remove padding to let image fill */
+            overflow: hidden; /* Contain the image's border-radius */
+        }
+        .hero img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover; /* Ensures the image covers the area, crops if needed */
+            border-radius: 8px 8px 0 0; /* Match the card, but only top */
+        }
+        .hero-text {
+            padding: 30px;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* --- Product Gallery Section --- */
+        .product-gallery-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+            justify-content: center; /* Center the cards */
+            gap: 25px; /* Space between cards */
+        }
+        .product-card {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+            background: #fdfaf6;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for all product images */
+            object-fit: cover;
+            border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+        }
+        .product-card h3 {
+            color: #5a3d2b;
+            margin: 15px 0 10px;
+        }
+        .product-card p {
+            font-size: 0.9rem;
+            padding: 0 15px 15px;
+            margin: 0;
+        }
+
+        /* --- About Section --- */
+        .about-us img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #4a2c2a;
+            color: #fdfaf6;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 8px 0;
+        }
+        footer .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav {
+                position: static; /* Remove sticky nav on mobile */
+            }
+            nav a {
+                display: block; /* Stack nav links */
+                margin: 5px 0;
+            }
+            .hero img {
+                height: 250px; /* Adjust hero image height for mobile */
+            }
+            .product-gallery-container {
+                flex-direction: column; /* Stack product cards */
+                align-items: center; /* Center the stacked cards */
+            }
+            .product-card {
+                width: 90%; /* Make cards wider on mobile */
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kolhapuri Khajina (कोल्हापुरी खजिना)</h1>
+        <p>Your One-Stop Shop for Kolhapur's Treasures</p>
+    </header>
+
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#products">Our Treasures</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Visit Us</a>
+    </nav>
+
+    <main>
+
+        <section id="welcome" class="hero">
+            
+            <img src="Patthar.jpg" alt="A beautiful panoramic view of a Kolhapur landmark">
+            
+            <div class="hero-text">
+                <h2>Welcome to a World of Heritage</h2>
+                <p>Discover authentic souvenirs and handcrafted keepsakes that capture the true spirit and rich culture of Kolhapur. We are your "Khajina" of memories.</p>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Our Treasures (आमचा खजिना)</h2>
+            <div class="product-gallery-container">
+
+                <div class="product-card">
+                    <img src="KolhapuriChappal.jpg" alt="Handcrafted Kolhapuri Chappals">
+                    <h3>Kolhapuri Chappals</h3>
+                    <p>Authentic, handcrafted leather sandals known for their durability and timeless style.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="Saaj.jpg" alt="Traditional Kolhapuri Saaj jewelry">
+                    <h3>Kolhapuri Saaj</h3>
+                    <p>Exquisite traditional jewelry, a symbol of local heritage and craftsmanship.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="gul.webp" alt="Organic Kolhapuri Jaggery (Gul)">
+                    <h3>Kolhapuri Jaggery (Gul)</h3>
+                    <p>Sweet, rich, and pure organic jaggery, a true taste of the local sugarcane fields.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="Masala.webp" alt="Famous Kolhapuri spices and masalas">
+                    <h3>Art & Spices</h3>
+                    <p>Unique local handicrafts and the world-famous, fiery Kolhapuri masalas.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <h2>About Kolhapuri Khajina</h2>
+            <p>We are more than just a souvenir shop. We are storytellers and curators of culture. Our "Khajina" (Treasure) is a carefully handpicked collection of items that represent the heart and soul of Kolhapur.</p>
+            <p>From the iconic leather chappals to the intricate designs of the Kolhapuri Saaj, every item in our store has a story to tell. We started this shop to give visitors and locals alike a chance to find and take home a piece of our rich heritage. We believe in supporting local artisans and preserving the traditions that make Kolhapur so special.</p>
+            
+            <img src="images/store-interior.jpg" alt="The warm and inviting interior of the Kolhapuri Khajina shop">
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Find Your Treasure</h2>
+        <p>Come and discover the culture of Kolhapur.</p>
+        <p><strong>Visit Us:</strong> 123, Mahalaxmi Temple Road, Kolhapur, Maharashtra 416001</p>
+        <p><strong>Email:</strong> info@kolhapurikhajina.com</p>
+        <p><strong>Call:</strong> +91 98765 43210</p>
+        
+        <p class="copyright">&copy; 2025 Kolhapuri Khajina. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
